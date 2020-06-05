@@ -1,0 +1,400 @@
+/*---------------------
+		General
+---------------------*/
+
+.bloque-type4 { margin-top: 160px !important; }
+
+::selection {
+	background-color: #005CAA !important;
+	color: #fff !important;
+}
+
+.d-none { display: none !important; }
+
+.justify-content-evenly { justify-content: space-evenly; }
+.justify-content-between { justify-content: space-between; }
+.justify-content-center { justify-content: center; }
+.justify-content-end { justify-content: flex-end; }
+.titleRow { margin-bottom: 1.2rem; }
+
+.ownContainer {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 576px) {
+	.ownContainer { max-width: 540px; }
+}
+
+@media (min-width: 768px) {
+	.ownContainer { max-width: 720px; }
+}
+
+@media (min-width: 992px) {
+	.ownContainer { max-width: 960px; }
+}
+
+@media (min-width: 1200px) {
+	.ownContainer { max-width: 1140px; }
+}
+
+.ownRow {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.btn.btn-primary {
+	padding: 1rem 3rem;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.tableButton { margin: 5px; }
+input[type="date"] { text-transform: uppercase; }
+
+/*----------- Index Page -----------*/
+
+#noCoups { padding: 5rem 0 2rem; }
+
+/*---------------------
+		Filters
+---------------------*/
+
+#filterHolder {
+	margin-bottom: 2.5rem;
+	padding: 10px;
+	background-color: #005CAA;
+}
+
+.filterCaller {
+	padding: 2.5rem;
+	color: #fff;
+	background-color: #337AB7;
+	border-radius: 10px;
+	display: block;
+	width: 100%;
+	font-size: 22px;
+	line-height: 25px;
+	font-weight: bold;
+	transition: all .15s ease-in-out;
+}
+
+.filterCaller:active,
+.filterCaller:focus,
+.filterCaller:hover {
+	text-decoration: none;
+	background-color: #146BB4;
+	color: #ccc;
+}
+
+.filterCaller i {
+	display: block;
+	font-size: 35px;
+	line-height: 38px;
+	margin-bottom: 10px;
+}
+
+.coupon:not(.dCat), .coupon:not(.dLoc) { display: none !important; }
+.filterModal { z-index: 10000; }
+.filterModal .modal-dialog { width: 100%; }
+.filterModal button { margin: 0 !important; }
+
+.modal i.far {
+	font-size: 40px;
+	line-height: 45px;
+	margin: 10px;
+}
+
+.filterTag {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+@media(max-width: 576px){
+	.filterModal { top: 15px; }
+	.filterModal .modal-dialog { max-width: 95%; }
+
+	.filterCaller {
+		font-size: 18px;
+		line-height: 21px;
+	}
+}
+
+/*----------- Categories -----------*/
+
+#categoryModal .ownRow .filter { padding: 10px; }
+
+#categoryModal .ownRow .filter div {
+	padding: 2rem;
+    border-radius: 15px;
+    background-color: #D6D6D6;
+    color: #787878;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+
+#categoryModal .ownRow .filter:active div,
+#categoryModal .ownRow .filter:focus div { 
+	background-color: #D6D6D6; 
+    color: #787878;
+}
+
+#categoryModal .ownRow .filter:hover div,
+#categoryModal .activeFilter > div { 
+	background-color: #0B1D48 !important;
+    color: #fff !important;
+}
+
+/*----------- Locations -----------*/
+
+#locationModal .ownRow .filter { padding: 5px; }
+
+#locationModal .ownRow .filter div {
+	padding: 1rem;
+    border-radius: 15px;
+    background-color: #D6D6D6;
+    color: #787878;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+
+#locationModal .ownRow .filter div p { margin: 0; }
+
+#locationModal .ownRow .filter:active div,
+#locationModal .ownRow .filter:focus div { 
+	background-color: #D6D6D6; 
+    color: #787878;
+}
+
+#locationModal .ownRow .filter:hover div,
+#locationModal .activeFilter > div { 
+	background-color: #0B1D48 !important;
+    color: #fff !important;
+}
+
+
+/*----------- Login Page -----------*/
+
+#loginForm {
+	padding: 45px;
+	margin-bottom: 0;
+}
+
+#loginForm h3 { margin: 0 0 25px; }
+
+#loginForm label {
+	color: #000;
+	margin: 0 auto;
+	font-size: 16px;
+	display: block;
+	width: 90%;
+}
+
+#loginForm input {
+	padding: 8px 15px;
+	border: 1.5px solid #005CAA;
+	border-radius: 8px;
+	outline: none;
+	height: auto;
+	margin: 15px auto;
+}
+
+#loginForm button {
+	display: inline-block;
+	margin-right: 45px;
+	background-color: #005CAA;
+	border: none;
+	transition: all .3s ease-in-out;
+}
+
+#loginForm button:hover { background-color: #0879D9; }
+
+#loginForm .col-sm-12:last-child { text-align: right; }
+
+@media(max-width: 576px){
+	#loginForm { padding: 0; }
+}
+
+/*----------- Dashboards -----------*/
+
+/*---------------------
+		Navbar
+---------------------*/
+
+.navRow {
+	width: auto;
+	height: 56px;
+}
+
+.navRow #shopName { margin: auto; }
+
+.navRow a {
+	font-weight: bold;
+	transition: all .3s ease-in-out;
+}
+
+.navRow #log_out {
+	margin-top: -5px;
+	margin-right: 15px;
+}
+
+.navRow #log_out span {
+	padding: 1.2rem 1.6rem;
+	transition: all .3s ease-in-out;
+	border-radius: 3px;
+}
+
+a#log_out:hover { background-color: #005CAA !important; }
+a#log_out span:hover { background-color: #4c9be8; }
+
+.navRow .logo img {
+	height: 45px;
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*---------------------
+	 Enter Coupons
+---------------------*/
+
+#enter_Coupon .justify-content-center { padding: 4rem 0 3rem; }
+#enter_Coupon label {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#enter_Coupon button { margin: 10px 0; }
+
+.checkboxHolder {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.checkboxHolder label {
+	margin-left: 15px !important;
+	font-size: 18px !important;
+	line-height: 22px !important;
+	font-weight: 400 !important;
+    padding: 10px;
+}
+
+.checkboxHolder .checkbox i:before,
+.checkboxHolder .checkbox i:after { left: -15px !important; }
+
+.checkboxHolder input[type="checkbox"]:checked + i::before {
+	background-color: #005CAA !important;
+	border-color: #005CAA !important;
+}
+
+.checkboxHolder input:focus,
+.checkboxHolder input:active { outline: none !important; }
+
+.checkboxHolder input[type="radio"]:checked + i::before { border-color: #005CAA !important; }
+.checkboxHolder input[type="radio"]:checked + i::after { background-color: #005CAA !important; }
+
+.radio.radio-big i:after {
+    top: 2px !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin-left: -20px !important;
+}
+
+/*---------------------
+	  View Shops
+---------------------*/
+
+.DTTT_container { display: none !important; }
+#view_Shops tbody td:nth-child(3) { text-align: center; }
+#view_Shops tbody td img { width: 100px; }
+
+/*---------------------
+	  Edit Shops
+---------------------*/
+
+.validateCheck,
+#edit_Shops { display: none; }
+
+/*---------------------
+	  New Coupon
+---------------------*/
+
+.propForms .form-group { min-height: 75px; }
+
+.propForms label,
+.propForms input,
+.propForms select,
+.propForms textarea {
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.propForms input,
+.propForms select,
+.propForms textarea {
+	height: auto;
+	padding: 15px 8px;
+}
+
+.propForms label {
+	font-weight: 700;
+}
+
+.propForms textarea {
+	min-height: 10rem;
+	resize: none;
+	width: 100% !important;
+}
+
+/*---------------------
+	 Edit Coupons
+---------------------*/
+
+#edit_Coupons { display: none; }
+
+/*----------------------------
+			Footer
+----------------------------*/
+
+.footer {
+	position: relative !important;
+	height: 75px;
+	min-height: 75px;
+	margin: 0 30px 15px;
+}
+
+.footer p {
+	line-height: 18px;
+	margin: 0 !important;
+}
+
+#spacer-footer {
+	height: 5px;
+	display: inline-block;
+	line-height: 5px;
+	width: 100%;
+}
+
+#yellow, #aviso {
+	text-decoration: underline;
+	transition: all .3s ease-in-out;
+	font-weight: bold;
+}
+
+#yellow { color: #FFC805; }
+#aviso { color: #1D9ACE; }
+
+#yellow:hover, #aviso:hover { color: inherit; }
+
+@media(max-width: 576px){
+	.footer {
+		height: 100px;
+		min-height: 100px;
+	}
+}
